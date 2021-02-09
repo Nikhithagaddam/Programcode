@@ -41,7 +41,7 @@ public class BaseballGameTest {
 		ballStrikeCountCheck(1, 2, 3, 8, 1, 0, 1, 0);
 		ballStrikeCountCheck(1, 2, 3, 2, 0, 8, 1, 0);
 		ballStrikeCountCheck(1, 2, 3, 3, 0, 8, 1, 0);
-		ballStrikeCountCheck(1, 2, 3, 1, 2, 3, 0, 3);
+		ballStrikeCountCheck(1, 2, 3, 3, 1, 8, 1, 0);
 	}
 
 	private static boolean ballStrikeCountCheck(int k0, int k1, int k2, int g0, int g1, int g2, int balls, int strikes) {

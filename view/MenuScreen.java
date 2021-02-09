@@ -25,5 +25,13 @@ public class MenuScreen {
 		var drawingBuitton = new JButton("Triangle Drawing");
 		menuPanel.add(baseballButton);
 		menuPanel.add(drawingBuitton);
+
+		baseballButton.addActionListener(event -> {
+			window.getContentPane().removeAll();
+			var panel = new BaseballGamePanel(window);
+			panel.init();
+			window.pack();
+			window.setVisible(true);
+		});
 	}
 }

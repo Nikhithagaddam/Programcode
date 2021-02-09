@@ -26,7 +26,7 @@ public class BaseballGame {
 	public void computeBallsStrikes() {
 		strikeCount = 0;
 		for(int i = 0; i < 3; i++) {
-			if(key[i] == guess[1]) ++strikeCount;
+			if(key[i] == guess[i]) ++strikeCount;
 		}
 		ballCount = 0;
 		for(int i = 0; i < 3; i++) {
