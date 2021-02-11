@@ -22,9 +22,9 @@ public class MenuScreen {
 		menuPanel.setLayout(new GridLayout(2, 1));
 		cp.add(BorderLayout.CENTER, menuPanel);
 		var baseballButton = new JButton("Baseball Game");
-		var drawingBuitton = new JButton("Triangle Drawing");
+		var drawingButton = new JButton("Triangle Drawing");
 		menuPanel.add(baseballButton);
-		menuPanel.add(drawingBuitton);
+		menuPanel.add(drawingButton);
 
 		baseballButton.addActionListener(event -> {
 			window.getContentPane().removeAll();
@@ -32,6 +32,14 @@ public class MenuScreen {
 			panel.init();
 			window.pack();
 			window.setVisible(true);
+		});
+
+		drawingButton.addActionListener(event -> {
+			window.getContentPane().removeAll();
+			var panel = new TriangleDrawingPanel(window);
+			panel.init();
+			window.pack();
+			window.revalidate();
 		});
 	}
 }
